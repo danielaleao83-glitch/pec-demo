@@ -1,0 +1,14 @@
+.auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.auth-header p {
+    font-size: 13px;
+    opacity: 0.7;
+}

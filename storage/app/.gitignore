@@ -1,0 +1,13 @@
+# ignora tudo
+*
+
+# mantém gitignore
+!.gitignore
+
+# mantém estrutura de pastas
+!public/
+!private/
+
+# garante que conteúdo dentro seja rastreado
+!public/**
+!private/**

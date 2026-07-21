@@ -1,0 +1,29 @@
+.input-group {
+    display: flex;
+    align-items: center;
+
+    background: #071423;
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    padding: 10px;
+}
+
+.input-group .icon {
+    margin-right: 8px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: #fff;
+
+    font-size: 14px;
+}

@@ -1,0 +1,16 @@
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,122 @@
+# =====================================
+# Laravel
+# =====================================
+
+/vendor
+/node_modules
+
+/bootstrap/cache/*.php
+
+
+# =====================================
+# Environment (.env)
+# =====================================
+
+.env
+.env.*
+.env-*
+!.env.example
+
+
+# =====================================
+# Storage
+# =====================================
+
+/public/storage
+
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+
+
+# =====================================
+# Cache
+# =====================================
+
+.phpunit.result.cache
+*.cache
+
+
+# =====================================
+# Logs
+# =====================================
+
+*.log
+
+
+# =====================================
+# IDE
+# =====================================
+
+.vscode/
+.idea/
+*.swp
+
+
+# =====================================
+# Sistema operacional
+# =====================================
+
+.DS_Store
+Thumbs.db
+
+
+# =====================================
+# Arquivos locais de desenvolvimento
+# =====================================
+
+*.ps1
+*.bat
+
+_diagnostico/
+tools/_cache/
+
+audit.json
+inventario.txt
+resumo.txt
+
+check_psr4.php
+check_rotas.php
+
+
+# =====================================
+# Docker local
+# =====================================
+
+docker-compose.override.yml
+
+
+# =====================================
+# Arquivos temporários
+# =====================================
+
+*.tmp
+*.temp
+*.bak
+
+*.zip
+*.rar
+
+
+# =====================================
+# Frontend / Build
+# =====================================
+
+.next/
+out/
+dist/
+
+.npm/
+.cache/
+
+
+# =====================================
+# Laravel IDE helpers
+# =====================================
+
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
