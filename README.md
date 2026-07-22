@@ -1,93 +1,70 @@
 # 🏥 PEC/eSUS APS Laravel DEMO
 
-![Laravel](https://img.shields.io/badge/Laravel-12-red)
-![PHP](https://img.shields.io/badge/PHP-8.2-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
-![License](https://img.shields.io/badge/License-Demo-green)
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql&logoColor=white)
 ![LGPD](https://img.shields.io/badge/LGPD-Compliant-success)
-# 🏥 PEC/Laravel DEMO
-
-> Sistema de Prontuário Eletrônico do Cidadão (PEC) desenvolvido em Laravel 12, inspirado na arquitetura do eSUS APS, com foco em boas práticas de desenvolvimento, segurança da informação e conformidade com a LGPD.
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
 
 ---
 
-## 📋 Sobre o Projeto
+# Sistema de Prontuário Eletrônico do Cidadão (PEC)
 
-O **PEC/eSUS APS Laravel DEMO** é um projeto demonstrativo que reproduz a estrutura de um sistema moderno de Prontuário Eletrônico utilizado na Atenção Primária à Saúde.
+Sistema desenvolvido em **Laravel 12**, inspirado na arquitetura do **eSUS APS**, com foco em arquitetura moderna, boas práticas de desenvolvimento, APIs REST, segurança da informação e conformidade com a **Lei Geral de Proteção de Dados (LGPD)**.
 
-O objetivo é demonstrar conhecimentos em:
+> **Projeto demonstrativo para fins acadêmicos, técnicos e de portfólio.**
+>
+> Este projeto **não possui vínculo oficial com o Ministério da Saúde** e **não representa um sistema homologado**.
 
-- Arquitetura de software
+---
+
+# 📋 Sobre o Projeto
+
+O objetivo deste projeto é demonstrar competências em desenvolvimento de sistemas para saúde utilizando tecnologias modernas.
+
+## Principais objetivos
+
+- Arquitetura de Software
 - Laravel 12
 - PHP 8.2+
 - PostgreSQL
+- APIs REST
 - Segurança da Informação
 - LGPD
 - Sistemas de Saúde
-- APIs REST
-- Integrações Governamentais
 - Boas práticas de desenvolvimento
-
-> Este projeto possui finalidade exclusivamente educacional e demonstrativa.
-
----
-
-# Objetivos
-
-O projeto busca implementar uma base sólida para um sistema de prontuário eletrônico contendo:
-
-- Cadastro de pacientes
-- Cadastro de profissionais
-- Agenda médica
-- Atendimento clínico
-- Evolução do paciente
-- Prescrição
-- Solicitação de exames
-- Vacinação
-- Histórico clínico
-- Painéis administrativos
-- Auditoria
-- Controle de acesso
+- Integrações futuras com o ecossistema do SUS
 
 ---
 
-# Arquitetura
-
-O sistema segue uma arquitetura moderna baseada em:
+# 🏗 Arquitetura
 
 ```
 Presentation Layer
-
-↓
-
+        │
 Application Layer
-
-↓
-
+        │
 Domain Layer
-
-↓
-
+        │
 Infrastructure Layer
-
-↓
-
+        │
 Database
 ```
 
-Princípios utilizados:
+### Princípios adotados
 
-- DDD (Domain Driven Design)
+- Domain Driven Design (DDD)
 - SOLID
+- Clean Architecture
 - Repository Pattern
 - Service Layer
-- Clean Code
-- REST API
 - MVC Laravel
+- REST API
+- Clean Code
 
 ---
 
-# Stack Tecnológica
+# 🚀 Stack Tecnológica
 
 | Tecnologia | Versão |
 |------------|---------|
@@ -98,126 +75,73 @@ Princípios utilizados:
 | Bootstrap | 5 |
 | JavaScript | ES2023 |
 | Composer | 2 |
-| NodeJS | 22 |
+| Node.js | 22 |
 | Vite | Atual |
 
 ---
 
-# Estrutura do Projeto
+# 📁 Estrutura do Projeto
 
-```
+```text
 app/
-
 bootstrap/
-
 config/
-
 database/
-
 docs/
-
 public/
-
 resources/
-
 routes/
-
 storage/
-
 tests/
 ```
 
 ---
 
-# Módulos
+# 📦 Módulos
 
-## Pacientes
-
-- Cadastro
-- Histórico
-- Documentos
-- Contatos
-
----
-
-## Profissionais
-
-- Cadastro
-- Especialidades
-- CNS
-- Conselho profissional
-
----
-
-## Agenda
-
-- Consultas
-- Retornos
-- Agendamentos
+| Módulo | Status |
+|---------|--------|
+| Cadastro de Pacientes | 🚧 |
+| Cadastro de Profissionais | 🚧 |
+| Agenda Médica | 🚧 |
+| Atendimento Clínico | 🚧 |
+| SOAP | 🚧 |
+| CID-10 | 🚧 |
+| CIAP-2 | 🚧 |
+| Prescrição | Planejado |
+| Solicitação de Exames | Planejado |
+| Vacinação | Planejado |
+| Administração | 🚧 |
+| Auditoria | Planejado |
 
 ---
 
-## Atendimento
+# 🔒 Segurança
 
-- SOAP
-- CID-10
-- CIAP-2
-- Evolução
-- Encaminhamento
-
----
-
-## Exames
-
-- Solicitação
-- Resultado
-- Histórico
-
----
-
-## Vacinação
-
-- Registro
-- Histórico
-- Campanhas
-
----
-
-## Administração
-
-- Usuários
-- Perfis
-- Permissões
-- Auditoria
-
----
-
-# Segurança
-
-O projeto considera diversas práticas de segurança:
+O sistema considera diversas práticas de segurança:
 
 - Autenticação
 - Autorização
 - Controle por Perfis
-- Logs
 - Auditoria
+- Logs
+- Hash de Senhas
 - Criptografia
-- Senhas Hash
-- CSRF
-- XSS Protection
-- SQL Injection Protection
+- Proteção CSRF
+- Proteção XSS
+- Proteção contra SQL Injection
 
 ---
 
-# LGPD
+# 🛡 LGPD
 
-O projeto considera requisitos da Lei Geral de Proteção de Dados.
+O projeto foi concebido considerando princípios da Lei Geral de Proteção de Dados.
 
-Exemplos:
+## Controles previstos
 
 - Consentimento
 - Controle de acesso
-- Registro de auditoria
+- Auditoria
 - Minimização de dados
 - Criptografia
 - Backup
@@ -225,86 +149,74 @@ Exemplos:
 
 ---
 
-# Integrações Futuras
+# 🔗 Integrações Futuras
 
-- eSUS APS
-- CADSUS
-- CNES
-- CNS
-- SIGTAP
-- CID-10
-- CIAP-2
-- TISS
-- FHIR
-- HL7
+| Sistema | Situação |
+|----------|----------|
+| eSUS APS | Planejada |
+| CADSUS | Planejada |
+| CNES | Planejada |
+| CNS | Planejada |
+| SIGTAP | Planejada |
+| CID-10 | Planejada |
+| CIAP-2 | Planejada |
+| TISS | Planejada |
+| HL7 | Planejada |
+| FHIR | Planejada |
 
 ---
 
-# Roadmap
+# 🗺 Roadmap
 
 ## Fase 1
 
-- Estrutura Laravel
-
-- Banco de dados
-
-- Autenticação
-
-- Usuários
-
----
+- ✅ Estrutura Laravel
+- ✅ Banco de Dados
+- ✅ Autenticação
+- 🚧 Usuários
 
 ## Fase 2
 
-- Cadastro de pacientes
-
+- Cadastro de Pacientes
 - Agenda
-
 - Atendimento
-
----
 
 ## Fase 3
 
 - Prescrição
-
 - Exames
-
 - Vacinação
-
----
 
 ## Fase 4
 
-- APIs
-
+- APIs REST
 - Dashboard
-
 - Auditoria
-
----
 
 ## Fase 5
 
 - Integrações SUS
-
+- HL7
 - FHIR
 
-- HL7
-
 ---
 
-# Documentação
+# 📚 Documentação
 
-A documentação técnica encontra-se em:
+A documentação técnica encontra-se na pasta:
 
-```
+```text
 docs/
+├── arquitetura.md
+├── banco-de-dados.md
+├── seguranca-lgpd.md
+├── integracoes-sus.md
+└── roadmap.md
 ```
 
 ---
 
-# Tecnologias
+# 💻 Tecnologias Utilizadas
 
 - Laravel
 - PHP
@@ -317,16 +229,16 @@ docs/
 
 ---
 
-# Licença
+# 📄 Licença
 
-Projeto de demonstração para fins acadêmicos e portfólio.
+Projeto desenvolvido para fins **educacionais, técnicos e de portfólio**.
 
 Não possui vínculo oficial com o Ministério da Saúde.
 
 ---
 
-# Desenvolvido por
+# 👩‍💻 Desenvolvido por
 
 **Daniela Leão da Silva**
 
-Projeto demonstrativo para estudo de arquitetura de sistemas de saúde utilizando Laravel.
+Projeto demonstrativo de arquitetura de sistemas para Atenção Primária à Saúde utilizando Laravel 12.
