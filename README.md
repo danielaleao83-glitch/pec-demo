@@ -1,5 +1,12 @@
 # 🏥 PEC/eSUS APS Laravel DEMO
 
+![Laravel](https://img.shields.io/badge/Laravel-12-red)
+![PHP](https://img.shields.io/badge/PHP-8.2-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
+![License](https://img.shields.io/badge/License-Demo-green)
+![LGPD](https://img.shields.io/badge/LGPD-Compliant-success)
+# 🏥 PEC/Laravel DEMO
+
 > Sistema de Prontuário Eletrônico do Cidadão (PEC) desenvolvido em Laravel 12, inspirado na arquitetura do eSUS APS, com foco em boas práticas de desenvolvimento, segurança da informação e conformidade com a LGPD.
 
 ---
