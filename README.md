@@ -1,244 +1,364 @@
 # 🏥 PEC/eSUS APS Laravel DEMO
 
-![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql&logoColor=white)
-![LGPD](https://img.shields.io/badge/LGPD-Compliant-success)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![LGPD](https://img.shields.io/badge/LGPD-Conforme-198754?style=for-the-badge&logo=shield&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-0D6EFD?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Demo-6C757D?style=for-the-badge)
 
 ---
 
-# Sistema de Prontuário Eletrônico do Cidadão (PEC)
+# 🏥 Sistema de Prontuário Eletrônico do Cidadão (PEC)
 
-Sistema desenvolvido em **Laravel 12**, inspirado na arquitetura do **eSUS APS**, com foco em arquitetura moderna, boas práticas de desenvolvimento, APIs REST, segurança da informação e conformidade com a **Lei Geral de Proteção de Dados (LGPD)**.
+Sistema desenvolvido em **Laravel 12**, inspirado na arquitetura do **eSUS APS**, com foco em arquitetura moderna, APIs REST, segurança da informação e conformidade com a LGPD.
 
-> **Projeto demonstrativo para fins acadêmicos, técnicos e de portfólio.**
->
-> Este projeto **não possui vínculo oficial com o Ministério da Saúde** e **não representa um sistema homologado**.
+O projeto simula uma plataforma de **Prontuário Eletrônico do Cidadão**, seguindo conceitos utilizados em sistemas de saúde digital:
+
+- Cadastro e gerenciamento de pacientes
+- Organização de atendimentos
+- Agenda de profissionais
+- Controle de informações clínicas
+- Segurança e rastreabilidade de dados
+- Arquitetura preparada para integrações futuras
+
+---
+
+# 📸 Screenshots
+
+## Visão Geral do Sistema
+
+![Sistema PEC/eSUS APS](assets/images/sistema.png)
 
 ---
 
 # 📋 Sobre o Projeto
 
-O objetivo deste projeto é demonstrar competências em desenvolvimento de sistemas para saúde utilizando tecnologias modernas.
+O **PEC/eSUS APS Laravel DEMO** é um sistema demonstrativo desenvolvido para representar a estrutura de um **Prontuário Eletrônico do Cidadão (PEC)** aplicado ao cenário da Atenção Primária à Saúde.
 
-## Principais objetivos
+A aplicação foi construída utilizando boas práticas do ecossistema Laravel, buscando uma arquitetura organizada, segura e preparada para crescimento.
 
-- Arquitetura de Software
+O objetivo principal é demonstrar conhecimentos em desenvolvimento de sistemas complexos, especialmente soluções voltadas para o setor de saúde.
+
+---
+
+# 🎯 Objetivos do Projeto
+
+- Criar uma base moderna para um sistema PEC
+- Aplicar arquitetura MVC utilizando Laravel
+- Desenvolver módulos organizados e escaláveis
+- Implementar boas práticas de segurança
+- Demonstrar integração entre backend, banco de dados e frontend
+- Criar uma solução preparada para futuras integrações
+
+---
+
+# 🚀 Tecnologias Utilizadas
+
+## Backend
+
 - Laravel 12
 - PHP 8.2+
-- PostgreSQL
-- APIs REST
-- Segurança da Informação
-- LGPD
-- Sistemas de Saúde
-- Boas práticas de desenvolvimento
-- Integrações futuras com o ecossistema do SUS
+- Composer 2
+- Laravel Sanctum
+- Laravel Reverb
+- Laravel Pulse
 
----
+## Banco de Dados
 
-# 🏗 Arquitetura
+- PostgreSQL 16
 
-```
-Presentation Layer
-        │
-Application Layer
-        │
-Domain Layer
-        │
-Infrastructure Layer
-        │
-Database
-```
+## Frontend
 
-### Princípios adotados
-
-- Domain Driven Design (DDD)
-- SOLID
-- Clean Architecture
-- Repository Pattern
-- Service Layer
-- MVC Laravel
-- REST API
-- Clean Code
-
----
-
-# 🚀 Stack Tecnológica
-
-| Tecnologia | Versão |
-|------------|---------|
-| Laravel | 12 |
-| PHP | 8.2+ |
-| PostgreSQL | 16 |
-| Redis | Opcional |
-| Bootstrap | 5 |
-| JavaScript | ES2023 |
-| Composer | 2 |
-| Node.js | 22 |
-| Vite | Atual |
-
----
-
-# 📁 Estrutura do Projeto
-
-```text
-app/
-bootstrap/
-config/
-database/
-docs/
-public/
-resources/
-routes/
-storage/
-tests/
-```
-
----
-
-# 📦 Módulos
-
-| Módulo | Status |
-|---------|--------|
-| Cadastro de Pacientes | 🚧 |
-| Cadastro de Profissionais | 🚧 |
-| Agenda Médica | 🚧 |
-| Atendimento Clínico | 🚧 |
-| SOAP | 🚧 |
-| CID-10 | 🚧 |
-| CIAP-2 | 🚧 |
-| Prescrição | Planejado |
-| Solicitação de Exames | Planejado |
-| Vacinação | Planejado |
-| Administração | 🚧 |
-| Auditoria | Planejado |
-
----
-
-# 🔒 Segurança
-
-O sistema considera diversas práticas de segurança:
-
-- Autenticação
-- Autorização
-- Controle por Perfis
-- Auditoria
-- Logs
-- Hash de Senhas
-- Criptografia
-- Proteção CSRF
-- Proteção XSS
-- Proteção contra SQL Injection
-
----
-
-# 🛡 LGPD
-
-O projeto foi concebido considerando princípios da Lei Geral de Proteção de Dados.
-
-## Controles previstos
-
-- Consentimento
-- Controle de acesso
-- Auditoria
-- Minimização de dados
-- Criptografia
-- Backup
-- Rastreabilidade
-
----
-
-# 🔗 Integrações Futuras
-
-| Sistema | Situação |
-|----------|----------|
-| eSUS APS | Planejada |
-| CADSUS | Planejada |
-| CNES | Planejada |
-| CNS | Planejada |
-| SIGTAP | Planejada |
-| CID-10 | Planejada |
-| CIAP-2 | Planejada |
-| TISS | Planejada |
-| HL7 | Planejada |
-| FHIR | Planejada |
-
----
-
-# 🗺 Roadmap
-
-## Fase 1
-
-- ✅ Estrutura Laravel
-- ✅ Banco de Dados
-- ✅ Autenticação
-- 🚧 Usuários
-
-## Fase 2
-
-- Cadastro de Pacientes
-- Agenda
-- Atendimento
-
-## Fase 3
-
-- Prescrição
-- Exames
-- Vacinação
-
-## Fase 4
-
-- APIs REST
-- Dashboard
-- Auditoria
-
-## Fase 5
-
-- Integrações SUS
-- HL7
-- FHIR
-
----
-
-# 📚 Documentação
-
-A documentação técnica encontra-se na pasta:
-
-```text
-docs/
-├── arquitetura.md
-├── banco-de-dados.md
-├── seguranca-lgpd.md
-├── integracoes-sus.md
-└── roadmap.md
-```
-
----
-
-# 💻 Tecnologias Utilizadas
-
-- Laravel
-- PHP
-- PostgreSQL
-- Composer
-- Bootstrap
+- Blade Templates
+- Bootstrap 5
 - JavaScript
-- HTML5
-- CSS3
+- Vite
+
+## Cache e Processamento
+
+- Redis
+- Filas Laravel
+- Jobs
+- Events
+
+---
+
+# 🏗️ Arquitetura da Aplicação
+
+Estrutura baseada no padrão MVC do Laravel:
+
+```
+app/
+├── Http/
+│   ├── Controllers/
+│   ├── Middleware/
+│   └── Requests/
+│
+├── Models/
+│
+├── Services/
+│
+└── Policies/
+
+
+database/
+├── migrations/
+├── factories/
+└── seeders/
+
+
+resources/
+├── views/
+├── css/
+└── js/
+
+
+routes/
+├── web.php
+└── api.php
+```
+
+---
+
+# 🩺 Funcionalidades
+
+## 👤 Cadastro de Pacientes
+
+- Registro de pacientes
+- Dados pessoais
+- Informações cadastrais
+- Histórico básico
+
+---
+
+## 📅 Agenda Médica
+
+- Organização de consultas
+- Controle de horários
+- Gestão de profissionais
+- Preparação para calendário clínico
+
+---
+
+## 📊 Dashboard Administrativo
+
+- Indicadores gerais
+- Visão operacional
+- Resumo do sistema
+- Monitoramento das informações
+
+---
+
+## 🔐 Segurança
+
+Implementações e planejamentos:
+
+- Controle de acesso
+- Proteção de dados
+- Auditoria de ações
+- Organização de permissões
+- Boas práticas LGPD
+
+---
+
+# 🔒 LGPD e Proteção de Dados
+
+O projeto considera princípios importantes para sistemas de saúde:
+
+- Proteção de dados pessoais
+- Controle de acesso aos dados
+- Registro de atividades
+- Segurança das informações sensíveis
+- Separação de responsabilidades
+
+---
+
+# 🔌 Integrações Futuras
+
+Planejamento de evolução:
+
+## 🏥 Saúde Digital
+
+- HL7 FHIR
+- Integração com sistemas externos
+- APIs para comunicação de dados clínicos
+
+## 🔏 Segurança
+
+- Assinatura digital ICP-Brasil
+- Certificados digitais
+- Validação de documentos
+
+## 📄 Documentos
+
+- Geração de PDF
+- Relatórios médicos
+- QR Code de identificação
+
+---
+
+# ⚙️ Instalação
+
+## Requisitos
+
+Antes de iniciar:
+
+- PHP 8.2+
+- Composer 2+
+- PostgreSQL 16
+- Node.js 22+
+- NPM
+
+---
+
+## Clonar o projeto
+
+```bash
+git clone https://github.com/seuusuario/pec-esus-laravel.git
+
+cd pec-esus-laravel
+```
+
+---
+
+## Instalar dependências
+
+Backend:
+
+```bash
+composer install
+```
+
+Frontend:
+
+```bash
+npm install
+```
+
+---
+
+## Configurar ambiente
+
+Criar arquivo `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Gerar chave:
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## Configurar banco de dados
+
+Edite:
+
+```
+.env
+```
+
+Configure:
+
+```
+DB_CONNECTION=pgsql
+DB_DATABASE=pec_esus
+DB_USERNAME=postgres
+DB_PASSWORD=sua_senha
+```
+
+Executar migrations:
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+# ▶️ Executando o Projeto
+
+Servidor Laravel:
+
+```bash
+php artisan serve
+```
+
+Frontend:
+
+```bash
+npm run dev
+```
+
+Acesse:
+
+```
+http://localhost:8000
+```
+
+---
+
+# 🧪 Testes
+
+Executar testes automatizados:
+
+```bash
+php artisan test
+```
+
+---
+
+# 📁 Estrutura de Imagens
+
+O README utiliza:
+
+```
+assets/
+└── images/
+    └── sistema.png
+```
+
+---
+
+# 📌 Status Atual
+
+🚧 **Projeto em desenvolvimento**
+
+Próximas evoluções:
+
+- Mais módulos clínicos
+- API completa
+- Integração FHIR
+- Controle avançado de permissões
+- Melhorias de interface
+- Auditoria completa
+
+---
+
+# 👩‍💻 Desenvolvimento
+
+Projeto criado para:
+
+- Estudo avançado de Laravel
+- Demonstração profissional
+- Portfólio de desenvolvimento
+- Pesquisa em sistemas de saúde digital
 
 ---
 
 # 📄 Licença
 
-Projeto desenvolvido para fins **educacionais, técnicos e de portfólio**.
+Este projeto possui finalidade:
 
-Não possui vínculo oficial com o Ministério da Saúde.
+✅ Educacional  
+✅ Demonstração técnica  
+✅ Portfólio profissional  
+
+Não representa o sistema oficial **e-SUS APS** do Ministério da Saúde.
 
 ---
 
-# 👩‍💻 Desenvolvido por
-
-**Daniela Leão da Silva**
-
-Projeto demonstrativo de arquitetura de sistemas para Atenção Primária à Saúde utilizando Laravel 12.
+⭐ Se este projeto foi útil ou interessante, considere deixar uma estrela no repositório.
